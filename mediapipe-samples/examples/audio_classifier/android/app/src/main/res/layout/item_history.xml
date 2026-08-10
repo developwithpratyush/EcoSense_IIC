@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/ecosense_bg"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/ecosense_border"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/history_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ecosense_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Doorbell" />
+
+        <TextView
+            android:id="@+id/history_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_label"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/ecosense_text_secondary"
+            android:textSize="12sp"
+            tools:text="10:42:15 AM" />
+
+        <TextView
+            android:id="@+id/history_confidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/ecosense_text_secondary"
+            android:textSize="14sp"
+            tools:text="86.4%" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
